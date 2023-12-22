@@ -5,12 +5,48 @@
   margin: 0 auto;
 }
 
-/*
- a {
-    color: inherit;
+
+.container-2 {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+.back {
+  color: blue;
+  padding: 30px 30px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+a {
     text-decoration: none;
 }
-*/
+
+.centr-pad, .block {
+  padding: 20px;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+
+.bgIN1 {
+  background: rgb(144, 161, 143);
+}
+
+
+.bgIN2 {
+  background: rgb(122, 113, 129);
+}
+
+.bgBF {
+  background: rgb(113, 128, 118);
+}
+
 
 /*
 first-child
@@ -21,8 +57,6 @@ hover
 */
 
 .blox22{
-  width: 600px;
-  height: 600px;
   margin: 0;
   text-align: center;
 }
@@ -32,12 +66,12 @@ hover
   
 }
 .first div {
-  
+  font-size: 30px;
   outline: 2px solid red;
 }
 .first > div {
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background: blue;
   display: inline-block;
   
@@ -56,34 +90,31 @@ hover
 }
 .second div {
   outline: 2px solid red;
+  font-size: 30px;
   
 }
 
 .second > div {
-  font-size: 10px;
-  width: 400px;
+  width: 800px;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
 }
 .second > div > div {
-height: 200px;
+height: 400px;
 }
 .second > div + div {
-  width: 200px;
-  
+  width: 400px;
 }
 .second > div + div > div {
-  height: 133px;
+  height: 266px;
+  vertical-align: text-top;
 }
 
 
 
 
 /* header */
-.back {
-  padding: 30px 0;
-  text-align: center;
-}
+
 
 .header {
   background: #000;
@@ -179,7 +210,7 @@ height: 200px;
 }
 
 .block-hidden::after {
-  content: " Back.png";
+  content: " ❄️";
 }
 
 .float-container::after {
@@ -254,12 +285,15 @@ height: 200px;
   height: 200px;
   display: block;
   margin: 0 0 15px;
+  
+
 }
 
 .card-container {
   margin: 0 0 15px;
   text-align: center;
   display: inline-block;
+  
 }
 
 .card-img img {
@@ -284,6 +318,96 @@ height: 200px;
 .card-link {
   text-decoration: underline;
 }
+/* CARDS FLOAT*/
+
+.container3 {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.cards-container2 {
+margin: 0 -15px;
+padding-left: 7%;
+padding-right: 7%;
+}
+
+.cards2 {
+  background: rgb(119, 228, 228);
+}
+
+.cards2 h2 {
+  font-size: 34px;
+  font-weight: 900;
+  margin: 0 0 40px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.card2 {
+  float: left;
+  width: 33.333%;
+  padding: 10px;
+  vertical-align: top;
+  padding: 15px;
+}
+
+.card2 > div {
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.card2:nth-child(1)> div{
+  background: orange;
+}
+
+.card2:nth-child(1) > div:hover{
+  background: blueviolet;
+}
+
+.card2:nth-child(1) > div:hover .card-title2 a {
+  color: white;
+}
+
+.card2 div:hover{
+  box-shadow: 0 0 10px black;
+}
+
+.card-img2 {
+  height: 120px;
+  display: block;
+  margin: 0 0 15px;
+}
+
+.card-img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.card-title2 > a {
+  color: black;
+}
+
+.card-desc2 {
+  margin: 0 0 15px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.card-link2 {
+  text-decoration: underline;
+}
+
+
 
 /*---------------------------------------------------------
 .ttt {
@@ -479,3 +603,78 @@ vertical-align: top;
   height: 100px;
 }
 
+
+
+
+.box-float div {
+  outline: 2px solid #000;
+}
+
+.box-first > div {
+  background: teal;
+  width: 400px;
+  height: 400px;
+  float:left;
+}
+
+.box-second > div {
+  width: 800px;
+  background: orange;
+  float: left;
+}
+.box-second > div > div {
+  height: 200px;
+}
+
+.box-second > div + div {
+  width: 400px;
+  
+}
+
+.box-second > div + div > div {
+  height: 133.333px;
+}
+
+.box-third div {
+  background: rgb(111, 18, 119);
+  
+}
+
+.box-third > div{
+  width: 400px;
+  float: left;
+  }
+
+.box-third > div > div {
+height: 400px;
+}
+.box-third > .block9 {
+clear: left;
+}
+
+.box-third > div + div {
+  width: 800px;
+  
+}
+
+.box-third > div + div > div {
+  height: 200px;
+    
+}
+
+.box-third > div + div > div > div{
+  height: 200px;
+float: left;
+}
+.box-third > div + div + div > div{
+  width: 400px;
+
+}
+
+.box-third > div + div > div + div > div{
+  width: 400px;
+
+}
+.box-third > div + div > div + div > div > div {
+  height: 100px;
+}
